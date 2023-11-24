@@ -36,22 +36,22 @@
    padding: 8px 10px;
 }
 .button-burger{
-   background: url(.//icons/burger.svg) no-repeat center center ;
+   background: url(..//icons/burger.svg) no-repeat center center ;
 }
 .button-call{
-   background: url(.//icons/call.svg) no-repeat center center ;
+   background: url(..//icons/call.svg) no-repeat center center ;
 }
 .button-chat{
-   background: url(.//icons/chat.svg) no-repeat center center ;
+   background: url(..//icons/chat.svg) no-repeat center center ;
 }
 .button-profile{
-   background: url(.//icons/profile.svg) no-repeat center center ;
+   background: url(..//icons/profile.svg) no-repeat center center ;
 }
 .button-repair{
-   background: url(.//icons/repair.svg) no-repeat center center ;
+   background: url(..//icons/repair.svg) no-repeat center center ;
 }
 .button-checkstatus{
-   background: url(.//icons/checkstatus.svg) no-repeat center center ;
+   background: url(..//icons/checkstatus.svg) no-repeat center center ;
 }
 
 /*-----------header-------------------------------------------*/
@@ -85,7 +85,7 @@
 
 .header__repair::before{
    content: '';
-   background-image: url(.//icons/divider.svg);
+   background-image: url(..//icons/divider.svg);
    width: 2px;
    height: 32px;
    position: absolute;
@@ -109,7 +109,7 @@
 }
 .main__title::before{
    content: '';
-   background-image: url(.//icons/highlight.svg);
+   background-image: url(..//icons/highlight.svg);
    width: 4px;
    height: 40px;
    position: absolute;
@@ -191,7 +191,7 @@
    padding-right: 40px;
 }
 .button-expand{
-   background: url(.//icons/expand.svg) no-repeat left center ;
+   background: url(..//icons/expand.svg) no-repeat left center ;
    padding-left: 20px;
 
 }
