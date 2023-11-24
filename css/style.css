@@ -6,7 +6,7 @@
  }
  body{
    font-family: 'TT Lakes','Times New Roman', Times, serif;
-   background-color: #F8F8F8;
+   
  }
  .button{
    margin: auto 8px; 
@@ -101,11 +101,13 @@
 /*-----------main-------------------------------------------*/
 .main{
    margin:0;
+   background-color: #F8F8F8;
 }
 .main__title{
    display: flex;
    justify-content: space-between;
    position: relative;
+   padding-top: 24px;
    
 }
 .main__title::before{
@@ -114,7 +116,7 @@
    width: 4px;
    height: 40px;
    position: absolute;
-   top: 0px;  
+    
 
 }
 .main_name{
@@ -216,11 +218,8 @@
       top: 10px;
       left: -8px;
       cursor:auto;
-   }   
-   .content__photo{
-      max-width: 430px;
-      margin: 0;
-   }
+   }  
+   
    .main__section{
       flex-wrap: nowrap;
       
@@ -230,12 +229,21 @@
       min-width: 312px;
       max-width: 490px;
    }
+   .content__photo{
+      max-width: 430px;
+      margin: 0;
+      padding-right: 24px;
+   }
   
 }
 @media (min-width:1120px){
    .header{
       display: none;
    }
+   .main{
+      margin:0;
+   }  
+
    .main__repair{
       display: flex;
    }
