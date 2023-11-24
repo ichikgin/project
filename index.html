@@ -11,31 +11,19 @@
 <body>
     <header class="header">
         <div class="header__menu">
-            <button class="button">
-                <img src="../icons/burger.svg" alt="menu">
-            </button>
+            <button class="button button-burger"></button>
             <a class = 'logo' href="#">
                 <img src="../logo/Group.svg" alt="logo">
             </a>
         </div>
         <div class="header__tablet">
-            <button class="button">
-                <img src="../icons/call.svg" alt="call">
-            </button>
-            <button class="button">
-                <img src="../icons/chat.svg" alt="chat">
-            </button>
-            <button class="button">
-                <img src="../icons/profile.svg" alt="profile">
-            </button>
+            <button class="button button-call"></button>
+            <button class="button button-chat"></button>
+            <button class="button button-profile"></button>
         </div>
         <div class="header__repair repair">
-            <button class="button">
-                <img src="../icons/repair.svg" alt="repair">
-            </button>
-            <button class="button">
-                <img src="../icons/checkstatus.svg" alt="checkstatus">
-            </button>
+            <button class="button button-repair"></button>
+            <button class="button button-checkstatus"></button>
         </div>
     </header>
     <main class="main">
@@ -44,31 +32,33 @@
                 Услуги и Сервисы
             </h1>
             <div class="main__repair repair">
-                <button class="button main__button">
+                <button class="button main__button button-repair">
                     <span class="button__text">Оставить заявку</span>
-                    <img src="../icons/repair.svg" alt="repair">
                 </button>
-                <button class="button main__button">
-                    <span class="button__text">Статус ремонта</span>
-                    <img src="../icons/checkstatus.svg" alt="checkstatus">
+                <button class="button main__button button-checkstatus">
+                    <span class="button__text ">Статус ремонта</span>
                 </button>
             </div>
         </div>
-        <nav class="main__navigation">
-            <a class="main__link" href="#">Ремонтируемые бренды</a>
-            <a class="main__link" href="#">Ремонтируемые устройства</a>
-            <a class="main__link" href="#">Цены на услуги</a>
-            <a class="main__link" href="#">Адреса сервисных центров</a>
-            <a class="main__link" href="#">Специальные цены</a>
-            <a class="main__link" href="#">Отзывы</a>
+        <nav>
+            <ul class="main__navigation">
+                <li class="main__link"><a class="link link-cheked" href="#">Ремонтируемые бренды</a></li>
+                <li class="main__link"><a class="link" href="#">Ремонтируемые устройства</a></li>
+                <li class="main__link"><a class="link" href="#">Цены на услуги</a></li>
+                <li class="main__link"><a class="link" href="#">Адреса сервисных центров</a></li>
+                <li class="main__link"><a class="link" href="#">Специальные цены</a></li>
+                <li class="main__link"><a class="link" href="#">Отзывы</a></li>
+            </ul>
         </nav>
         <section class="main__section">
             <div class="main__content content">
-                <p class="content__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.<br><br>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
+                <p class="content__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
                 </p>
-                <button class="button main__button"><img src="../icons/expand.svg"> <span class="button__text">Читать дальше</span></button>
+                <p class="content__text--hidden">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
+                </p>
+                <button class="button main__button button-expand"><span class="button__text">Читать дальше</span></button>
             </div>
-            <img class="content__photo" src="../content/СPS contetn.jpg" alt="Фото вывески">
+            <img class="content__photo" src="/content/СPS_content.jpg" alt="Фото вывески">
         </section>
     </main>   
 </body>
