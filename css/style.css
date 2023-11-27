@@ -199,10 +199,9 @@
 .button-expand{
    background: url(..//icons/expand.svg) no-repeat left center ;
    padding-left: 20px;
-   width: 190px;
+   width: 145px;
    cursor: pointer;
    font-family: inherit;
-   display: flex;
    align-items: center;
 
 }
