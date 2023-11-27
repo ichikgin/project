@@ -8,8 +8,7 @@
    font-family: 'TT Lakes','Times New Roman', Times, serif;
    
  }
- .button{
-   margin: auto 8px; 
+ .round-button{
    background-color: #FFF;
    position: relative;
    cursor: pointer;
@@ -23,6 +22,9 @@
  .repair{
    display: flex;
    position: relative;
+   gap: 16px;
+   padding-left: 20px;
+   padding-right: 30px;
 }
 .button__text{
    margin-right: 8px;
@@ -37,6 +39,7 @@
 }
 .button-burger{
    background: url(..//icons/burger.svg) no-repeat center center ;
+   position: relative; 
 }
 .button-call{
    background: url(..//icons/call.svg) no-repeat center center ;
@@ -55,7 +58,7 @@
 }
 
 /*-----------header-------------------------------------------*/
-.header{
+.main-header{
    background-color:#FFF ;
    height: 88px;
    display: flex;
@@ -63,9 +66,10 @@
    width: 100%;
    justify-content: space-between;
    border-bottom: 1px solid #D9FFF5 ;
+   gap:15px;
 } 
 
-.header__menu{
+.main-header__menu{
    display: flex;
    align-items: center;
    width: auto;
@@ -74,26 +78,28 @@
 }
 
  .logo{
-   width: 110px;
+   width: 115px;
    height: auto;
-   padding-left: 10px;
-   position: relative; 
-   margin-right: 5px; 
-   
+   padding-left: 16px;
 
  }
-
-.header__repair::before{
+.main-header__repair{
+   padding-right: 15px;
+   
+}
+.main-header__repair::before{
    content: '';
    background-image: url(..//icons/divider.svg);
    width: 2px;
    height: 32px;
    position: absolute;
    align-self: center;
+   left:0
+
    
 } 
 
-.header__tablet{
+.main-header__tablet{
    display: none;
    margin-left: auto;
 
@@ -135,7 +141,7 @@
    display: none;
    background-color: #F8F8F8;
 }
-.main__navigation{
+.nav-list{
    display: flex;
    overflow-x: auto;
    justify-content: flex-start;
@@ -143,7 +149,7 @@
    height: auto;
    padding: 5px;
 }
-.main__link{
+.nav-list__item{
    flex-shrink: 0;
    margin: 10px;
    font-size: 16px;
@@ -176,13 +182,12 @@
 }
 
 .content__text{
-   white-space: pre-wrap;
    width: 100%;
-   height: auto;
-   margin-top: 5px;
-}
-.content__text--hidden{
+   height: 90px;
    overflow: hidden;
+   display: flex;
+   gap: 20px;
+   flex-direction: column;
 }
 .main__button{
    background-color: inherit;
@@ -194,6 +199,11 @@
 .button-expand{
    background: url(..//icons/expand.svg) no-repeat left center ;
    padding-left: 20px;
+   width: 190px;
+   cursor: pointer;
+   font-family: inherit;
+   display: flex;
+   align-items: center;
 
 }
 .content__photo{
@@ -203,23 +213,25 @@
 /*-----------media-------------------------------------------*/
 
 @media (min-width:768px){
-   .header__tablet{
-      display:flex;
+   .main-header{
+      gap:0;  
    }
-   .header__menu{
+   .main-header__tablet{
+      display:flex;
+      gap: 16px;
+      padding: 20px;
+   }
+   .main-header__menu{
       width: 204px;
    }
-   .logo::before{
-      content: '';
+   .delimiter{
       background-image: url(../icons/divider.svg);
       width: 2px;
-      height: 32px;
-      position: absolute;
-      top: 10px;
-      left: -8px;
-      cursor:auto;
+      height: 32px;  
    }  
-   
+   .logo{
+      padding:0;
+   }
    .main__section{
       flex-wrap: nowrap;
       
@@ -229,15 +241,17 @@
       min-width: 312px;
       max-width: 490px;
    }
+   .content__text{
+      height: auto;
+   }
    .content__photo{
       max-width: 430px;
       margin: 0;
       padding-right: 24px;
-   }
-  
+   } 
 }
 @media (min-width:1120px){
-   .header{
+   .main-header{
       display: none;
    }
    .main{
@@ -247,7 +261,7 @@
    .main__repair{
       display: flex;
    }
-   .main__navigation{
+   .nav-list{
       flex-wrap: wrap;
    }
    .main__section{
