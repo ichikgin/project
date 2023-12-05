@@ -20,11 +20,11 @@ font-family: 'TT Lakes','Times New Roman', Times, serif;
     text-align: left;
     white-space: pre;
     border-radius: 50%;
+    transition: transform 1s, box-shadow 1s, filter 2s;
 }
 .round-button:hover{
     transform: scale(1.1) translateY(-5px) ;
     box-shadow: 2px 2px 5px 0 #34495e;
-    transition: transform 1s, box-shadow 1s, filter 2s;
     filter: hue-rotate(360deg);        
 }
 .button-call{
@@ -36,24 +36,21 @@ font-family: 'TT Lakes','Times New Roman', Times, serif;
 .button-profile{
     background: url(..//icons/profile.svg) no-repeat center center ;
 }
-.button-cancel{
+.button_cancel{
     background: url(..//icons/cancel.svg) no-repeat center center ;
 }
 .button-search{
     background: url(..//icons/search.svg) no-repeat center center ;
     margin-left: auto;
-       
-    
 }
-
-
 .logo{
     width: 115px;
     height: auto; 
+    transition: transform 3s; 
 }
 .logo:hover{
     transform: rotateX(360deg);
-    transition: transform 3s;       
+          
 } 
 .aside-menu{
     width: 320px;
@@ -84,35 +81,33 @@ font-family: 'TT Lakes','Times New Roman', Times, serif;
 .aside-menu__nav{
     margin-bottom: auto;
 }
-.nav-item-cheked::before{
+.nav-item_checked::before{
     content: '';
-    background-image: url(..//icons/highlight.svg);
+    background-image: url(..//icons/highlight_for_aside.svg);
     width: 4px;
-    height: 32px;
+    height: 33px;
     position: absolute;
     left:0;
 }
 .nav-list{
-    justify-content: flex-start;
+    display: flex;
     list-style-type: none;
     height: auto;
     flex-wrap: wrap;
-    align-items: center;    
+    flex-direction: column;
+    gap: 32px;
 }
 .nav-list__item{
-    display: flex;
     flex-shrink: 0;
     font-size: 16px;
     font-weight: 500;
     height: 32px;
     font-weight: 1fr;
-    margin-bottom: 32px;
-    flex-direction: column;
-    justify-content: center;    
+    line-height: 33px;     
     
 }
 
-.link-cheked{
+.link_checked{
     color: #7E7E82;
 }
  
