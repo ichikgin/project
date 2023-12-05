@@ -60,7 +60,8 @@ font-family: 'TT Lakes','Times New Roman', Times, serif;
     display: flex;
     flex-direction: column;
     gap: 50px;
-    height: 1024px;
+    min-height: 830px;
+    height: 100%;
     position: absolute;
 }
 .link{
