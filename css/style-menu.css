@@ -84,9 +84,9 @@ font-family: 'TT Lakes','Times New Roman', Times, serif;
 }
 .nav-item_checked::before{
     content: '';
-    background-image: url(..//icons/highlight_for_aside.svg);
+    background: url(..//icons/highlight_for_aside.svg) no-repeat;
     width: 4px;
-    height: 33px;
+    height: 32px;
     position: absolute;
     left:0;
 }
@@ -104,7 +104,7 @@ font-family: 'TT Lakes','Times New Roman', Times, serif;
     font-weight: 500;
     height: 32px;
     font-weight: 1fr;
-    line-height: 33px;     
+    line-height: 32px;     
     
 }
 
