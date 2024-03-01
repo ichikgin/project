@@ -6,6 +6,8 @@
  }
  body{
    font-family: 'TT Lakes','Times New Roman', Times, serif;
+   max-width: 1120px;
+   margin: auto
    
  }
  .round-button{
@@ -62,7 +64,6 @@
    width: 100%;
    justify-content: space-between;
    border-bottom: 1px solid #D9FFF5 ;
-   
    padding: 16px;
 } 
 
@@ -84,10 +85,11 @@
 }
 .page-header__repair::before{
    content: '';
-   background-image: url(..//icons/divider.svg);
+   background-color:#EAEAEA;
    width: 2px;
    height: 32px;
    align-self: center;
+   border-radius: 15px;
  
 } 
 
@@ -110,11 +112,12 @@
 }
 .main__title::before{
    content: '';
-   background-image: url(..//icons/highlight.svg);
+   background-color: #41F6D7;
    width: 4px;
    height: 40px;
+   border-radius: 15px;
    position: absolute;
-   left:0;
+   left:-1px;
     
 
 }
@@ -135,7 +138,7 @@
 }
 .nav-list{
    display: flex;
-   overflow-x: auto;
+   overflow-x:hidden;
    justify-content: flex-start;
    list-style-type: none;
    height: auto;
@@ -217,9 +220,10 @@
       width: 204px;
    }
    .delimiter{
-      background-image: url(../icons/divider.svg);
+      background-color:#EAEAEA;
       width: 2px;
-      height: 32px;  
+      height: 32px; 
+      border-radius: 15px; 
    }  
    .logo{
       padding:0;
