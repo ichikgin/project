@@ -138,12 +138,18 @@
 }
 .nav-list{
    display: flex;
-   overflow-x:hidden;
+   overflow-x:auto;
    justify-content: flex-start;
    list-style-type: none;
    height: auto;
    padding: 5px;
+   scrollbar-width: none;
 }
+/*.nav-list::-webkit-scrollbar {
+   width: 0;
+   height: 0;
+}
+*/
 .nav-list__item{
    flex-shrink: 0;
    margin: 10px;
