@@ -30,7 +30,7 @@ const newSlide = document.querySelector('#newSlide').content.querySelector('.sli
 
 const contentAdd = function (src, alt) {
   newSlide.children[0].src = src;
-  newSlide.children[0].textContent = alt;
+  newSlide.children[0].alt = alt;
   return newSlide
 
 }
