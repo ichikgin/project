@@ -28,9 +28,9 @@ const swiperSlide = document.querySelectorAll('.swiper-slide');
 const newSlide = document.querySelector('#newSlide').content.querySelector('.slider__slide'); // шаблон для нового  слайда
 
 
-const contentAdd = function (src, alt) {
-  newSlide.children[0].src = src;
-  newSlide.children[0].alt = alt;
+const contentAdd = function (link, altLink) {
+  newSlide.children[0].src = link;
+  newSlide.children[0].alt = altLink;
   return newSlide
 
 }
