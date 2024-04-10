@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>swiper</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href=".//fonts/TTLakes/stylesheet.css">
+  <link rel="stylesheet" href="css/style-swiper.css">
+</head>
+<body>
+  <div class="swiper slider">
+    <h3 class="slider__title"> Ремонт техники различных брендов</h3>
+    <div class="swiper-wrapper slider__wrapper" >
+      <div class="swiper-slide slider__slide"><img src="/icons/swiper_logo/Lenovo.png" alt="Lenovo"><a href="#" class="swiper-link"></a></div>
+      <div class="swiper-slide slider__slide"><img src="/icons/swiper_logo/Samsung.png" alt="Samsung"><a href="#" class="swiper-link"></a></div>
+      <div class="swiper-slide slider__slide"><img src="/icons/swiper_logo/Apple.png" alt="Apple"><a href="#" class="swiper-link"></a></div>
+      <div class="swiper-slide slider__slide"><img src="/icons/swiper_logo/ViewSonic.png" alt="ViewSonic"><a href="#" class="swiper-link"></a></div>
+      <div class="swiper-slide slider__slide"><img src="/icons/swiper_logo/Bosch.png" alt="Bosch"><a href="#" class="swiper-link"></a></div>
+      <div class="swiper-slide slider__slide"><img src="/icons/swiper_logo/Hp.png" alt="Hp"><a href="#" class="swiper-link"></a></div>
+      <div class="swiper-slide slider__slide"><img src="/icons/swiper_logo/Acer.png" alt="Acer"><a href="#" class="swiper-link"></a></div>
+      <div class="swiper-slide slider__slide"><img src="/icons/swiper_logo/Sony.png" alt="Sony"><a href="#" class="swiper-link"></a></div>
+      <div class="swiper-slide slider__slide"><img src="/icons/swiper_logo/Lenovo.png" alt="Lenovo"><a href="#" class="swiper-link"></a></div>
+      
+      <template id='newSlide'>
+        <div class="slider__slide"><img src="/icons/swiper_logo/Lenovo.png" alt="Lenovo"><a href="#" class="swiper-link"></a></div>
+      </template>
+    </div>
+    <button class="button-expand"><span class="button__text">Показать всё</span></button>
+    <div class="swiper-pagination"></div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="scripts/swiper.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,115 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: 'TT Lakes','Times New Roman', Times, serif;  
+}
+body{
+  max-width: 1120px;
+  margin: auto
+}
+
+.slider {
+
+  height: 220px;
+  margin: auto;
+  background-color: #F8F8F8;
+  outline: 1px ;
+  position: relative;
+  border-top: 1px solid #D9FFF5 ;
+  padding-left: 16px;
+}
+.swiper::after{
+  position: absolute;
+  width: 24px;
+  height: 100px;
+  right: 0px;
+  top: 70px;
+  content: '';
+  background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+  z-index: 1;
+}
+.slider__title{
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 16px;
+  background: linear-gradient(45deg, #F8F8F8 0%, #FFFFFF 98.61%);
+  padding: 16px 0;
+  color: #7E7E82;
+}
+
+.slider__slide{
+  width: 240px;
+  height: 72px;
+  padding: 16px;
+  opacity: 0px;
+  background-color: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  border-radius: 6px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.swiper-pagination-bullet{
+  background-color: #B5B6BC;
+  width: 12px;
+  height: 12px;
+}
+
+.swiper-link{
+  width: 40px;
+  height: 40px;
+  border: 2px solid #FF3E79;
+  border-radius: 50%;
+  background: url('/icons/dropdown.svg') no-repeat center;
+}
+.button-expand{
+  background: url('..//icons/expand.svg') no-repeat left center;
+  width: 145px;
+  padding: 16px 0;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  display: none;
+ 
+}
+.button-narrow{
+  background-image: url('..//icons/expandReverse.svg');
+  width: 110px;
+}
+
+/*-----------media-------------------------------------------*/
+
+@media (min-width:768px){
+  .slider {
+    height: 100%;
+    width: 100%;
+    padding-left: 16px;
+    
+  }
+
+  .slider__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    overflow: hidden;
+    height: 190px;
+    align-content: baseline;
+    width: 100%;
+  }
+  .slider__wrapper-narrow{
+    height: 100%;
+  }
+  .slider__slide{
+    width: 224px;
+    margin-right: 3vw;
+  }
+
+  .button-expand{
+    display:block;
+
+}
+}
