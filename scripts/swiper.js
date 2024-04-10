@@ -46,8 +46,8 @@ if (clientWidth > 765)  {
   document.querySelector('.swiper-wrapper').classList.remove('swiper-wrapper');
   document.querySelector('.swiper-pagination').remove();
 
-  sliderWraper.appendChild(contentAdd('/icons/swiper_logo/Sony.png', 'Sony').cloneNode(true));
-  sliderWraper.appendChild(contentAdd('/icons/swiper_logo/Bosch.png', 'Bosch').cloneNode(true));
+  sliderWraper.appendChild(contentAdd('./icons/swiperlogo/Sony.png', 'Sony').cloneNode(true));
+  sliderWraper.appendChild(contentAdd('./icons/swiperlogo/Bosch.png', 'Bosch').cloneNode(true));
 
 }
 
