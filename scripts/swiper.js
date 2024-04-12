@@ -25,7 +25,7 @@ const buttonExpand = document.querySelector('.button-expand'); //кнопка
 const sliderWraper = document.querySelector('.slider__wrapper');
 const swiperSlide = document.querySelectorAll('.swiper-slide');
 
-const newSlide = document.querySelector('#newSlide').content.querySelector('.slider__slide'); // шаблон для нового  слайда
+const newSlide = document.querySelector('.newSlide').content.querySelector('.slider__slide'); // шаблон для нового  слайда
 
 
 const contentAdd = function (link, altLink) {
@@ -46,8 +46,8 @@ if (clientWidth > 765)  {
   document.querySelector('.swiper-wrapper').classList.remove('swiper-wrapper');
   document.querySelector('.swiper-pagination').remove();
 
-  sliderWraper.appendChild(contentAdd('../icons/swiperLogo/Sony.png', 'Sony').cloneNode(true));
-  sliderWraper.appendChild(contentAdd('../icons/swiperLogo/Bosch.png', 'Bosch').cloneNode(true));
+  sliderWraper.appendChild(contentAdd('./icons/swiperLogo/Sony.png', 'Sony').cloneNode(true));
+  sliderWraper.appendChild(contentAdd('./icons/swiperLogo/Bosch.png', 'Bosch').cloneNode(true));
 
 }
 
@@ -56,9 +56,11 @@ if (clientWidth > 765)  {
 buttonExpand.addEventListener('click', function() {
   buttonExpand.classList.toggle('button-narrow');
   sliderWraper.classList.toggle('slider__wrapper-narrow');
+  const text = buttonExpand.querySelector('.button__text')
+  text.classList.toggle('text-narrow')
   if(buttonExpand.classList.contains('button-narrow')) {
-    buttonExpand.textContent ='Скрыть'
+    text.textContent ='Скрыть'
   } else {
-    buttonExpand.textContent ='Показать всё'
+    text.textContent ='Показать всё'
   }
 })
